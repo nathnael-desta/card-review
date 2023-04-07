@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 15px;
+    font-family: Lexend Deca;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: max-content;
+    height: fit-content;
+    border-radius: 2.5rem;
+    box-shadow: rgba(0,0,0,0.3);
+    margin: 0 10rem 0 10rem ;
+    
+}
+
+.first {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    height: 22rem;
+    width: 12rem;
+    padding: 0 2rem;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: hsl(184, 100%, 22%);
+    height: 22rem;
+    width: 12rem;
+    padding: 0 2rem;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 22rem;
+    width: 12rem;
+    background-color:  hsl(179, 100%, 13%);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 0 2rem;
+}
+
+h1 {
+    font-family: Big Shoulders Display;
+    color: hsl(0, 0%, 95%);
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+img {
+    width: 2.5rem;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+p {
+    text-align: left;
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 0.6rem;
+    line-height: 1rem;
+}
+
+.learn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    width: 6rem;
+    border-radius: 3rem;
+    height: 2rem;
+    bottom: 2rem;
+    background-color: hsl(0, 0%, 95%);
+    font-weight: 400;
+}
+
+.first .learn {
+    color: hsl(31, 77%, 52%);
+}
+.second .learn {
+    color: hsl(184, 100%, 22%);
+}
+.third .learn {
+    color: hsl(179, 100%, 13%);
+}
+
+.learn:hover {
+    color: white;
+    border: 0.1rem white solid;
+    cursor: pointer;
+}
+
+.first .learn:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.second .learn:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.third .learn:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 599px) {
+    .content{
+        flex-direction: column;
+        margin: 0 3rem;
+    }
+    .first {
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+    }
+    .second {
+        border-bottom-right-radius: 0;
+    }
+    .third {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0rem;
+    }
+    
+}
+
